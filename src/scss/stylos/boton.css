@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap");
+:root {
+  --clr-brown: hsl(24, 56%, 63%);
+  --clr-dark: hsl(0, 0%, 8%);
+  --clr-neutral: hsl(0, 0%, 27%);
+}
+
+:root {
+  --bigShoulders: "Big Shoulders Display", sans-serif;
+}
+
+.title {
+  display: flex;
+}
+.title p {
+  padding: 1.5rem 2rem;
+  background-color: var(--clr-dark);
+  color: #fff;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+.title > img {
+  padding: 24px 32px;
+  background-color: var(--clr-brown);
+}/*# sourceMappingURL=boton.css.map */

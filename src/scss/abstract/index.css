@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&display=swap");
+:root {
+  --clr-brown: hsl(24, 56%, 63%);
+  --clr-dark: hsl(0, 0%, 8%);
+  --clr-neutral: hsl(0, 0%, 27%);
+}
+
+:root {
+  --bigShoulders: "Big Shoulders Display", sans-serif;
+}/*# sourceMappingURL=index.css.map */

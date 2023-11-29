@@ -1,0 +1,21 @@
+@use '../abstract/' as *; 
+
+
+.title {
+    display: flex;
+    
+    p {
+        padding: 1.5rem 2rem;
+        background-color: var(--clr-dark);
+        color: #fff;
+        font-size:1.25rem;
+        text-transform: uppercase;
+    }
+
+    & > img {
+        padding: 24px 32px;
+        background-color: var(--clr-brown);
+    }
+
+   
+}

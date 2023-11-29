@@ -1,0 +1,132 @@
+@use '../abstract/' as *;
+
+.gallery2Pics {
+
+    margin-bottom: 7.5rem;
+      
+    &__text {
+        font-family: var(--bigShoulders);
+        background-color: var(--clr-dark);
+        padding:3rem 1.5rem;
+        color: #fff;
+
+        .gallery2Pics__title {
+
+         margin-bottom: 1.5rem;   
+        }
+
+        & h3 {
+            font-size: 50px;
+            line-height: 0.9;
+        }
+
+        & p {
+            font-size: 1.125rem;
+            line-height: 1.55;
+        }
+
+    }
+
+    &__grid {
+
+        display: grid;
+        gap: 0;
+
+        @media (min-width: 48rem) {
+           
+            grid-template-columns: auto 280px;
+            grid-template-rows: 313px 396px;
+            gap: 11px;
+            grid-area:
+            'imgTablet  imgTablet2'
+            'imgTablet  dark';
+            
+
+            & .big {
+
+               grid-area: imgTablet;
+               grid-column: 1 / 2;
+               grid-row: 1 / 2;
+               max-height: 720px;
+                
+            }
+
+            & .small {
+
+              grid-area: imgTablet2;
+              grid-column: 2 / 3;
+              grid-row: 1 / 2;
+                
+            }
+
+           & .gallery2Pics__text {
+            
+                grid-area: dark;
+                grid-column: 2 / 3;
+                grid-row: 2 / 3;
+
+            } 
+
+        }
+
+        @media (min-width:70rem) {
+
+          all: unset;
+            
+          display: grid;
+          gap: 1rem;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+
+          grid-template-areas: 
+          'bp sp'
+          'bp sp'
+          'bp dark';
+
+          & .big {
+
+            width: 635px;
+            height: 100%;
+            grid-area: bp;
+
+          }
+
+          & .small {
+            
+            min-width: 445px;
+           /*  max-height: 313px; */
+           
+            grid-area: sp;
+          }
+
+          & .gallery2Pics__text {
+            padding-block: 64px;
+            height: 350px;  
+            min-width: 445px;  
+            grid-column-start: 2;
+            /* grid-row-end: 2 ; */
+            
+
+            & span {
+              display: block;
+            } 
+           
+            & .gallery2Pics__title h3 {
+                font-size: 60px;
+            }
+
+            & .gallery2Pics__paragraph {
+                width: 350px;
+            }
+           
+
+          }
+           
+           
+
+
+        }
+    }
+
+
+}

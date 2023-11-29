@@ -1,0 +1,55 @@
+@use '../abstract/' as *;
+
+.footer {
+    background-color: var(--clr-dark);
+    padding: 3rem 2rem;
+    
+    &__paragraph {
+        
+        font-family: var(--bigShoulders);
+        font-size: 1rem;
+        color: #fff;
+        line-height: 1.6;
+
+    }
+
+    &__icons  {
+
+       img + img {
+        margin-left: 10px;
+       } 
+
+    }
+
+    div + div {
+
+        margin-top: 38px;
+    }
+
+    &__wrapper {
+
+        @media (min-width:48rem) {
+    
+            display: flex;
+            justify-content: space-between;
+            align-items:first baseline;
+
+            & .footer__paragraph {
+
+                width: 281px;
+
+            }
+
+            & .footer__logo {
+                align-self:flex-start;
+                margin-top: 45px;
+                
+            }
+    
+        }
+
+
+    }
+
+
+}
